@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formval.js"></script>
+</head>
+<style>
+    body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+        }
+    .container{
+        
+        background-color: grey;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 50%;
+            height: 110%; /* Adjust the height of the container */
+            margin: auto;
+    
+    }
+    h1{
+        text-align: center;
+        color: blue;
+    }
+
+    input[type=text], input[type=password], input[type=email],input[type=number],input[type=submit] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  /* display: inline-block; */
+  border: none;
+  background: #f1f1f1;
+}
+input[type=message]{
+    width: 450px;
+    height:90px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+}
+</style>
+<body>
+    <h1>Form Validation </h1>
+    <div class="container">
+    <form action="nxtpage.html" method="post" onsubmit="return validate()" > 
+        <label id="name" name="name">Enter your name</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your  Name"><br><br>
+
+        <label id="psswd" name="psswd">Enter password</label><br>
+        <input type="password" id="psswd" name="psswd" placeholder="enter your password"><br><br>
+
+        <label name="mail" id="mail">Enter email</label><br>
+        <input type="email" name="mail" id="mail" placeholder="Enter your email"><br><br>
+
+        
+        <label id="psswd" name="psswd">Enter password</label><br>
+        <input type="password" id="psswd" name="psswd" placeholder="enter your password"><br><br>
+        
+        <label id="phno" name="phno">Enter Phone number</label><br>
+        <input type="number" id="phno" name="phno" placeholder="Enter your phone number"><br><br>
+
+        <label id="message" name="message">Message</label><br>
+        <input type="message" id="message" name="message" placeholder="Enter a message"><br><br>
+        <button onclick="validate()">Submit</button>
+    </form>
+</div>
+
+        
+
+    
+    
+</body>
+</html>
